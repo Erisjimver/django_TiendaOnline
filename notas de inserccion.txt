@@ -1,0 +1,17 @@
+---------insertar articulos ------------
+art=Articulos(nombre='camisa', seccion='confeccion',precio=75)
+art.save()
+
+art=Articulos.objects.create(nombre='camisa', seccion='confeccion',precio=75)
+
+
+--actualizar----- o update
+art.precio=95
+art.save()
+
+
+--borrar articulos o delete-----------
+art4=Articulos.objects.get(id=2)
+art4.delete()
+
+lista=Articulos.objects.all()
