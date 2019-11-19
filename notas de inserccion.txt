@@ -1,3 +1,13 @@
+python manage.py shell
+
+from gestionPedidos.models import Articulos
+-----------consultar------------------------
+Articulos.objects.filter(seccion=¨deportes¨)
+Articulos.objects.filter(seccion=¨deportes¨,precio__gte=90) es un mayor que 90 si se usa lte es un menor que 90
+orquilla de valores
+
+funcion __range(orquilla de valores 10,150) entre 10 y 150
+
 ---------insertar articulos ------------
 art=Articulos(nombre='camisa', seccion='confeccion',precio=75)
 art.save()
