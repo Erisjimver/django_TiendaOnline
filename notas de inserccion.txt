@@ -25,3 +25,11 @@ art4=Articulos.objects.get(id=2)
 art4.delete()
 
 lista=Articulos.objects.all()
+
+
+
+crear super usuario
+1. detener el servicio
+2. en la consola escribir: python manage.py createsuperuser
+    alli se escribe el usuario y la contraseña
+
