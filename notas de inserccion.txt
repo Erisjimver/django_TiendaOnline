@@ -33,3 +33,4 @@ crear super usuario
 2. en la consola escribir: python manage.py createsuperuser
     alli se escribe el usuario y la contraseña
 
+python manage.py runserver
